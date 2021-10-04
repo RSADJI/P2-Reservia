@@ -11,7 +11,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1440px;
+  max-width: 1940px;
   margin: auto;
 }
 .header__img {
@@ -110,7 +110,7 @@ flex: 0 0 100%;
   background-color: #0049b7;
 }
 .main {
-  max-width: 1440px;
+  max-width: 1940px;
   margin: auto;
   padding: 0 2rem;
   box-sizing: border-box;
@@ -163,6 +163,7 @@ flex: 0 0 100%;
   color: blue;
 }
 .header__filters__filter__title {
+  font-size: 0.8rem;
   margin: 0 1rem;
 }
 .header__result {
@@ -285,11 +286,11 @@ flex: 0 0 100%;
   height: 100%;
   object-fit: cover;
 }
-.host__popular__wrap__content__Content {
+.host__popular__wrap__content__content {
   display: flex;
   flex-direction: column;
 }
-.host__popular__wrap__content__Content__whitespace {
+.host__popular__wrap__content__content__whitespace {
   flex: 1;
 }
 .host__popularhost__main__card {
@@ -326,6 +327,29 @@ flex: 0 0 100%;
 }
 .activity__card__title {
   margin: 1.2rem 1.5rem;
+}
+.footer {
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.footer_wrap {
+  display: flex;
+  max-width: 100%;
+  width: 1940px;
+  margin: auto;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.footer_block {
+  width: 30%;
+  padding: 2rem 2rem;
+}
+.footer_block_link {
+  display: block;
+  margin: 1rem 0;
+}
+.footer_block_link:hover {
+  text-decoration: underline;
 }
 
 /* Media Queries */
@@ -372,6 +396,9 @@ flex: 0 0 100%;
     flex: 1;
 	width: 100%;
 }
+.header__search__form__submit__input {
+  border-radius: 1rem 1rem 1rem 1rem;
+}
 .header__search__form__submit__input__text {
     display: none;
 }
@@ -402,7 +429,7 @@ flex: 0 0 100%;
     display: none !important;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1940px) {
   .host {
     grid-template-columns: 1fr;
     row-gap: 2rem;
@@ -488,5 +515,28 @@ flex: 0 0 100%;
     row-gap: 2.5rem;
     grid-template-columns: 1fr;
     grid-template-rows: auto 11.5rem 11.5rem 11.5rem 11.5rem 11.5rem 11.5rem;
+  }
+}
+@media (max-width: 650px) {
+  .footer_wrap {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .footer_block {
+    width: 100%;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .footer_block:first-child {
+    margin-top: 0;
+  }
+  .footer_block:last-child {
+    margin-bottom: 0;
+  }
+  .footer_block_title {
+    margin: 0;
+  }
+  .footer_block_link:last-child {
+    margin-bottom: 0;
   }
 }
