@@ -240,9 +240,6 @@ flex: 0 0 100%;
 .host__main__card__description {
   margin: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
-.host__main__card__description__price {
-  font-weight: bold;
-}
 .host__main__card__grade {
   margin: 0 0.75rem 0.25rem 0.75rem;
 }
